@@ -1,0 +1,26 @@
+.about {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.about_p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 50px;
+  font-weight: 500;
+  padding: 0px 20px 0px 20px;
+  text-align: justify;
+}
+
+.bullet_points {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.bullet_points p {
+  /* text-align: justify; */
+  padding: 0px 30px 0px 30px;
+}
