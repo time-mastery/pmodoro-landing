@@ -18,7 +18,7 @@ function MainNavigation() {
             <Link href="/contact">Contact</Link>
           </li>
           <li className={classes.getStarted}>
-            <Link href="">Get Started</Link>
+            <Link href="">contribute</Link>
           </li>
         </ul>
       </nav>
