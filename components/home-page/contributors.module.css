@@ -1,0 +1,12 @@
+.contributors {
+  text-align: center;
+}
+
+.contributors h3 {
+  font-weight: 400;
+}
+
+.contributors div {
+  display: inline;
+  font-weight: 700
+}
