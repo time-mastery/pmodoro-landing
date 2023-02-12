@@ -21,8 +21,11 @@
 }
 
 .bullet_points p {
-  /* text-align: justify; */
   padding: 0px 30px 0px 30px;
+}
+
+.bullet_points h3 {
+  margin-top: 28px;
 }
 
 .image {
