@@ -4,7 +4,12 @@
     to bottom,
     var(--color-grey-100),
     var(--color-grey-50)
-  );
+  );  
+}
+
+.hero_content {
+  max-width: 700px;
+  margin: auto;
 }
 
 .image_one {
@@ -50,18 +55,20 @@
 
 .hero h2 {
   font-weight: 600;
-  font-size: var(--size-18);
+  font-size: var(--size-17);
   color: var(--color-grey-800);
   padding: 20px 20px;
-  max-width: 700px;
   margin: auto;
 }
 
+/* .hero p {
+} */
+
 .hero button {
-  padding: 10px 23px;
+  padding: 13px 27px;
   border-radius: 50px;
   margin-bottom: var(--size-20);
-  margin-top: var(--size-2);
+  margin-top: var(--size-4);
   transition: 0.3s;
   font-weight: 600;
 }
