@@ -41,7 +41,16 @@
 
 .getStarted a:hover {
   background-color: var(--color-grey-200);
+}
 
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  margin-left: 5px;
 }
 
 @media (min-width: 768px) {
