@@ -17,10 +17,10 @@ function About() {
         <div className={classes.bullet_point}>
           <div className={classes.image}>
             <Image
-              src="/images/branch.png"
+              src="/icons/branch.svg"
               alt="mobile image"
               width={34}
-              height={40}
+              height={26}
             />
           </div>
           <h3>Open Source</h3>
@@ -32,10 +32,10 @@ function About() {
         <div className={classes.bullet_point}>
           <div className={classes.image}>
             <Image
-              src="/images/thunder.png"
+              src="/icons/thunder.svg"
               alt="mobile image"
               width={15}
-              height={40}
+              height={26}
             />
           </div>
           <h3>Boost Productivity</h3>
@@ -45,12 +45,14 @@ function About() {
           </p>
         </div>
         <div className={classes.bullet_point}>
-          <Image
-            src="/images/accessibility.png"
-            alt="mobile image"
-            width={38}
-            height={40}
-          />
+          <div className={classes.image}>
+            <Image
+              src="/icons/accessibility.svg"
+              alt="mobile image"
+              width={38}
+              height={26}
+            />
+          </div>
           <h3>Progress Tracking</h3>
           <p>
             Keep track of your progress and see how much you've accomplished
@@ -58,12 +60,14 @@ function About() {
           </p>
         </div>
         <div className={classes.bullet_point}>
-          <Image
-            src="/images/umbrella.png"
-            alt="mobile image"
-            width={40}
-            height={40}
-          />
+          <div className={classes.image}>
+            <Image
+              src="/icons/umbrella.svg"
+              alt="mobile image"
+              width={35}
+              height={26}
+            />
+          </div>
           <h3>Easy-to-use Timer</h3>
           <p>
             Pmodoro makes it easy to implement the Pomodoro Technique with its
