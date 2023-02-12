@@ -12,14 +12,12 @@ async function fetcher(...arg) {
 export default function Contributors() {
   const { data } = useSwr("/api/github", fetcher);
 
-  console.log(data.contributors);
-
   return (
     <section className={classes.contributors}>
       <h3>
         Contributors of <div>Pmodoro</div>
       </h3>
-      {data.contributors.map((contributor) => (
+      {data?.contributors.map((contributor) => (
         <div key={contributor.id}>
           <h1>{contributor.login}</h1>
         </div>
