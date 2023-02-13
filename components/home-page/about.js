@@ -5,7 +5,7 @@ import classes from "./about.module.css";
 
 function About() {
   return (
-    <section className={classes.about}>
+    <section className={classes.about} id='about'>
       <h2>About us</h2>
       <p className={classes.about_p}>
         Welcome to our open-source organization! We are dedicated to creating
