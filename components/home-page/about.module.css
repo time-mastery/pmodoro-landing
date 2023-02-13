@@ -15,17 +15,24 @@
 .bullet_points {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   padding: 15px;
   max-width: 1000px;
   margin: auto;
 }
 
 .bullet_points p {
-  padding: 0px 30px 0px 30px;
+  padding: 0px 25px 0px 25px;
 }
 
 .bullet_points h3 {
   margin-top: 28px;
+}
+
+.bullet_point {
+  flex: 1 1 0px;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
@@ -43,4 +50,9 @@
   height: 60px;
   border-radius: 50%;
   z-index: -1;
+  transition: .4s;
+}
+
+.image:hover::before {
+  background-color: var(--color-green-100);
 }

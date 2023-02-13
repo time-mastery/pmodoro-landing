@@ -1,5 +1,7 @@
 import React from "react";
 import useSwr from "swr";
+import Link from "next/link";
+import Image from "next/image";
 
 import classes from "./contributors.module.css";
 
@@ -18,10 +20,28 @@ export default function Contributors() {
         Contributors of <div>Pmodoro</div>
       </h3>
       {data?.contributors.map((contributor) => (
-        <div key={contributor.id}>
-          <h1>{contributor.login}</h1>
-        </div>
+        <section key={contributor.id} className={classes.contributor}>
+          <Link href={contributor.html_url} target="_blank rel=noopener">
+            <img
+              className={classes.image}
+              src={contributor.avatar_url}
+              alt={contributor.login}
+            />
+            {/* <Image
+              src={contributor.avatar_url}
+              alt={contributor.login}
+              width={30}
+              height={30}
+            /> */}
+          </Link>
+        </section>
       ))}
+      <Link
+        href="https://github.com/time-mastery/pmodoro-application"
+        className={classes.link}
+      >
+        Contribute
+      </Link>
     </section>
   );
 }

@@ -69,12 +69,15 @@
   border-radius: 50px;
   margin-bottom: var(--size-20);
   margin-top: var(--size-4);
-  transition: 0.3s;
+  transition: 0.5s;
   font-weight: 600;
+  background-color: var(--color-green-100);
+
 }
 
 .hero button:hover {
-  background-color: var(--color-grey-200);
+  background-color: var(--color-green-200);
+
 }
 
 @media (max-width: 768px) {
