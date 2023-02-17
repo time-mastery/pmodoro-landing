@@ -20,11 +20,10 @@
 }
 
 .contributor {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5px 0 5px;
 }
 
 .link {
@@ -44,4 +43,18 @@
 .image {
   width: 50px;
   border-radius: 50%;
+  margin-left: 5px;
 }
+
+.image:hover {
+  width: 60px;
+  margin-bottom: -10px;
+}
+
+/* @media (max-width: 420px) {
+  .contributor {
+    max-width: 350px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+} */

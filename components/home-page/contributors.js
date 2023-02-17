@@ -22,11 +22,18 @@ export default function Contributors() {
       {data?.contributors.map((contributor) => (
         <section key={contributor.id} className={classes.contributor}>
           <Link href={contributor.html_url} target="_blank rel=noopener">
-            <img
-              className={classes.image}
-              src={contributor.avatar_url}
-              alt={contributor.login}
-            />
+            {contributor ? (
+              <div>
+                <img
+                  className={classes.image}
+                  src={contributor.avatar_url}
+                  alt={contributor.login}
+                />
+              </div>
+            ) : (
+              <Image src="/spinner.gif" alt="spinner" width={40} height={40} />
+            )}
+
             {/* <Image
               src={contributor.avatar_url}
               alt={contributor.login}
