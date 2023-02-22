@@ -17,7 +17,7 @@ function Hero() {
       <div className={classes.images}>
         <div className={classes.image_one}>
           <Image
-            src="/images/phone-one.png"
+            src="/images/screenshot1.png"
             alt="mobile image"
             width={170}
             height={342.4}
@@ -25,7 +25,7 @@ function Hero() {
         </div>
         <div className={classes.image_two}>
           <Image
-            src="/images/phone-one.png"
+            src="/images/screenshot2.png"
             alt="mobile image"
             width={170}
             height={342.4}
@@ -33,7 +33,7 @@ function Hero() {
         </div>
         <div className={classes.image_three}>
           <Image
-            src="/images/phone-one.png"
+            src="/images/screenshot3.png"
             alt="mobile image"
             width={170}
             height={342.4}
