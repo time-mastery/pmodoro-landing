@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import classes from "./hero.module.css";
 
 function Hero() {
@@ -12,7 +14,14 @@ function Hero() {
           with custom task lists and progress tracking. Download now and see the
           difference it can make in your workday!
         </p>
-        <button>Get the app</button>
+        <button>
+          <Link
+            href="https://github.com/time-mastery/pmodoro-application/releases/"
+            target="_blank rel=noopener"
+          >
+            Get the app
+          </Link>
+        </button>
       </div>
       <div className={classes.images}>
         <div className={classes.image_one}>
