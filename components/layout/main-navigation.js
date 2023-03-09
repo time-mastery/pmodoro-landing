@@ -20,8 +20,8 @@ function MainNavigation() {
           </li>
 
           <li className={classes.contact}>
-            <div onClick={() => setOpen(!open)}>
-              <Link href="#">Contact</Link>
+            <div onClick={() => setOpen(!open)} style={{ cursor: "pointer" }}>
+              Contact
             </div>
 
             {open && (
