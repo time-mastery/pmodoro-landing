@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "./logo";
@@ -5,6 +6,8 @@ import Logo from "./logo";
 import classes from "./main-navigation.module.css";
 
 function MainNavigation() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className={classes.header}>
       <Link href="/">
@@ -15,8 +18,40 @@ function MainNavigation() {
           <li>
             <Link href="/#about">About</Link>
           </li>
-          <li>
-            <Link href="#">Contact</Link>
+
+          <li className={classes.contact}>
+            <div onClick={() => setOpen(!open)}>
+              <Link href="#">Contact</Link>
+            </div>
+
+            {open && (
+              <div className={classes.icons}>
+                <Link
+                  href="https://github.com/time-mastery"
+                  target="_blank rel=noopener"
+                  className={classes.icon}
+                >
+                  <Image
+                    src="/icons/github.svg"
+                    alt="github"
+                    width={28}
+                    height={20}
+                  />
+                </Link>
+                <Link
+                  href="https://github.com/time-mastery"
+                  target="_blank rel=noopener"
+                  className={classes.icon}
+                >
+                  <Image
+                    src="/icons/mail.svg"
+                    alt="email"
+                    width={30}
+                    height={18}
+                  />
+                </Link>
+              </div>
+            )}
           </li>
           <li className={classes.getStarted}>
             <Link

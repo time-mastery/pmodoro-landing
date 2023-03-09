@@ -12,8 +12,6 @@
   list-style: none;
   display: flex;
   align-items: baseline;
-  margin: 0;
-  padding: 0;
 }
 
 .header li {
@@ -22,7 +20,7 @@
 
 .header a {
   color: var(--color-grey-700);
-  font-size: var(--size-3);
+  font-size: var(--size-4);
   transition: .5s;
 }
 
@@ -53,12 +51,44 @@
   margin-left: 5px;
 }
 
+.contact {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  background-color: #414141;
+  padding: 7px 5px 4px 4px;
+  border-radius: 8px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  z-index: 10;
+}
+
+.icon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  left: 4.8px; 
+  border-radius: 2px;
+  z-index: -1;
+  transition: .4s;
+  top:21.5px;
+
+}
+
+.icon:hover::before{
+  background-color: #c0c0c0;
+}
+
 @media (min-width: 768px) {
   .header ul {
     gap: 0.5rem;
-  }
-
-  .header a {
-    font-size: var(--size-4);
   }
 }
