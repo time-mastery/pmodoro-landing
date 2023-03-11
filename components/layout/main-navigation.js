@@ -16,7 +16,7 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/#about">About</Link>
+            <Link href="/#about" scroll={false}>About</Link>
           </li>
 
           <li className={classes.contact}>
