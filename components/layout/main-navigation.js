@@ -16,12 +16,12 @@ function MainNavigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/#about">About</Link>
+            <Link href="/#about" scroll={false}>About</Link>
           </li>
 
           <li className={classes.contact}>
-            <div onClick={() => setOpen(!open)}>
-              <Link href="#">Contact</Link>
+            <div onClick={() => setOpen(!open)} style={{ cursor: "pointer" }}>
+              Contact
             </div>
 
             {open && (
