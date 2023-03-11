@@ -16,7 +16,7 @@ function Footer() {
           <Image src="/icons/github.svg" alt="github" width={34} height={20} />
         </Link>
         <Link
-          href="https://github.com/time-mastery"
+          href="mailto:tmasterycontact@gmail.com"
           target="_blank rel=noopener"
           className={classes.icon}
         >
