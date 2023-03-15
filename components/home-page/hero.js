@@ -25,27 +25,21 @@ function Hero() {
       </div>
       <div className={classes.images}>
         <div className={classes.image_one}>
-          <Image
-            src="/images/screenshot1.png"
+          <img
+            src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/1.png"
             alt="mobile image"
-            width={170}
-            height={342.4}
           />
         </div>
         <div className={classes.image_two}>
-          <Image
-            src="/images/screenshot2.png"
+          <img
+            src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/3.png"
             alt="mobile image"
-            width={170}
-            height={342.4}
           />
         </div>
         <div className={classes.image_three}>
-          <Image
-            src="/images/screenshot3.png"
+          <img
+            src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/2.png"
             alt="mobile image"
-            width={170}
-            height={342.4}
           />
         </div>
       </div>
