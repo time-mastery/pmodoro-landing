@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="text-center bg-gradient-to-b from-[#f1f1f1] to-[#f5f5f5]">
+    <section className="text-center bg-gradient-to-b from-[#f1f1f1] to-[#f5f5f5] shadow-md">
       <div className="max-w-[700px] m-auto  max-md:max-w-[600px] max-[650px]:max-w-[450px]">
         <h2 className="font-semibold text-[2.4rem] max-[650px]:text-[25px] text-[#343036] p-[20px] leading-[3rem] max-md:leading-[2.2rem] max-[650px]:leading-[2rem] mb-3 max-md:text-[30px]">
           Get organized and boost your productivity with our Pmodoro app!
