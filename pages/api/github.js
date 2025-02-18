@@ -5,9 +5,7 @@ export default async (req, res) => {
     auth: process.env.AUTH_TOKEN,
   });
 
-  const contributors = await octokit.request(
-    "GET /repos/time-mastery/pmodoro-application/contributors"
-  );
+  const contributors = await octokit.request("GET /orgs/time-mastery/members");
 
   const data = contributors.data;
 
