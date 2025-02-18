@@ -2,10 +2,9 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "./logo";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover.js";
 
 function MainNavigation() {
-  const [open, setOpen] = useState(false);
-
   return (
     <header className="w-full bg-[#f1f1f1]">
       <div className="flex justify-between items-center h-[5rem]  px-[5%] max-w-6xl m-auto">
@@ -21,12 +20,11 @@ function MainNavigation() {
             </li>
 
             <li className="">
-              <div onClick={() => setOpen(!open)} style={{ cursor: "pointer" }}>
-                Contact
-              </div>
-
-              {open && (
-                <div className="gap-2 bg-[#414141] px-2.5 py-[7px] rounded-lg flex items-center absolute mt-1">
+              <Popover>
+                <PopoverTrigger asChild>
+                  <div className="cursor-pointer">Contact</div>
+                </PopoverTrigger>
+                <PopoverContent className="gap-2 bg-[#414141] px-2.5 py-[7px] rounded-lg flex items-center w-22">
                   <Link
                     href="https://github.com/time-mastery"
                     target="_blank rel=noopener"
@@ -51,8 +49,8 @@ function MainNavigation() {
                       height={18}
                     />
                   </Link>
-                </div>
-              )}
+                </PopoverContent>
+              </Popover>
             </li>
             <li className="">
               <Link
