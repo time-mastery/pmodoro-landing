@@ -3,27 +3,45 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <footer className="bg-black flex justify-between items-center -z-10">
-      <div className="ml-[11px] p-[15px] flex items-center">
-        <Link
-          href="https://github.com/time-mastery"
-          target="_blank rel=noopener"
-          className="relative z-10 px-2 flex justify-center items-center icon"
-        >
-          <Image src="/icons/github.svg" alt="github" width={23} height={15} />
-        </Link>
-        <Link
-          href="mailto:tmasterycontact@gmail.com"
-          target="_blank rel=noopener"
-          className="relative z-10 px-2 flex justify-center items-center icon"
-        >
-          <Image src="/icons/mail.svg" alt="email" width={23} height={14} />
-        </Link>
+    <footer className="bg-black border-t border-gray-800">
+      <div className="max-w-6xl mx-auto px-5 py-6 md:py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex items-center gap-4">
+          <Link
+            href="https://github.com/time-mastery"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-900 hover:bg-[#01ED64] transition-all duration-300 group"
+          >
+            <Image 
+              src="/icons/github.svg" 
+              alt="github" 
+              width={20} 
+              height={20}
+              className="brightness-0 invert group-hover:brightness-0 group-hover:invert transition-transform duration-300 group-hover:scale-110"
+            />
+          </Link>
+          <Link
+            href="mailto:tmasterycontact@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-900 hover:bg-[#01ED64] transition-all duration-300 group"
+          >
+            <Image 
+              src="/icons/mail.svg" 
+              alt="email" 
+              width={20} 
+              height={20}
+              className="brightness-0 invert group-hover:brightness-0 group-hover:invert transition-transform duration-300 group-hover:scale-110"
+            />
+          </Link>
+        </div>
+        <span className="text-gray-400 text-sm md:text-base">
+          Copyright © Pmodoro {currentYear}
+        </span>
       </div>
-      <span className="text-[#ffffffba] text-[12px] mr-[35px]">
-        Copyright © Pmodoro 2023
-      </span>
     </footer>
   );
 }

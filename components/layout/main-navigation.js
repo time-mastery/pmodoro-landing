@@ -6,64 +6,80 @@ import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover.js";
 
 function MainNavigation() {
   return (
-    <header className="w-full bg-[#f1f1f1]">
-      <div className="flex justify-between items-center h-[5rem]  px-[5%] max-w-6xl m-auto">
-        <Link href="/">
+    <header className="w-full bg-white/80 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+      <div className="flex justify-between items-center h-[5rem] px-[5%] max-w-6xl m-auto">
+        <Link href="/" className="hover:opacity-80 transition-opacity duration-300">
           <Logo />
         </Link>
         <nav>
-          <ul className="flex items-center list-none gap-11  max-sm:gap-9">
-            <li className="">
-              <Link href="/#about" scroll={false}>
+          <ul className="flex items-center list-none gap-8 md:gap-11 max-sm:gap-6">
+            <li>
+              <Link 
+                href="/#about" 
+                scroll={false}
+                className="text-gray-700 hover:text-[#01ED64] font-medium transition-colors duration-300 relative group"
+              >
                 About
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#01ED64] group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
 
-            <li className="">
+            <li>
               <Popover>
                 <PopoverTrigger asChild>
-                  <div className="cursor-pointer">Contact</div>
+                  <button className="cursor-pointer text-gray-700 hover:text-[#01ED64] font-medium transition-colors duration-300 relative group">
+                    Contact
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#01ED64] group-hover:w-full transition-all duration-300"></span>
+                  </button>
                 </PopoverTrigger>
-                <PopoverContent className="gap-2 bg-[#414141] px-2.5 py-[7px] rounded-lg flex items-center w-22">
-                  <Link
-                    href="https://github.com/time-mastery"
-                    target="_blank rel=noopener"
-                    className="w-5 z-10 before:content-[''] before:absolute before:w-[20px] before:h-[2px] before:rounded-[2px] before:-z-0 before:transition-all before:duration-200 before:hover:bg-[#c0c0c0] before:left-[11px] before:top-[1.8rem]"
-                  >
-                    <Image
-                      src="/icons/github.svg"
-                      alt="github"
-                      width={28}
-                      height={20}
-                    />
-                  </Link>
-                  <Link
-                    href="mailto:tmasterycontact@gmail.com"
-                    target="_blank rel=noopener"
-                    className="w-5 z-10 before:content-[''] before:absolute before:w-[20px] before:h-[2px] before:rounded-[2px] before:-z-0 before:transition-all before:duration-200 before:hover:bg-[#c0c0c0] before:right-[11px] before:top-[1.8rem]"
-                  >
-                    <Image
-                      src="/icons/mail.svg"
-                      alt="email"
-                      width={30}
-                      height={18}
-                    />
-                  </Link>
+                <PopoverContent className="bg-[#414141] rounded-2xl p-2 w-auto border-none shadow-lg">
+                  <div className="flex items-center gap-2">
+                    <Link
+                      href="https://github.com/time-mastery"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[#525252] transition-colors duration-200"
+                    >
+                      <Image
+                        src="/icons/github.svg"
+                        alt="github"
+                        width={20}
+                        height={20}
+                        className="brightness-0 invert"
+                      />
+                    </Link>
+                    <Link
+                      href="mailto:tmasterycontact@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[#525252] transition-colors duration-200"
+                    >
+                      <Image
+                        src="/icons/mail.svg"
+                        alt="email"
+                        width={20}
+                        height={20}
+                        className="brightness-0 invert"
+                      />
+                    </Link>
+                  </div>
                 </PopoverContent>
               </Popover>
             </li>
-            <li className="">
+            <li>
               <Link
                 href="https://github.com/time-mastery/pmodoro-application"
-                className="flex items-center justify-center border-2 border-gray-800 rounded-3xl py-[5px] px-[15px] hover:bg-[#01ED64] transition duration-500 font-semibold"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center border-2 border-gray-800 rounded-full py-2 px-4 md:px-6 hover:bg-[#01ED64] hover:border-[#01ED64] transition-all duration-300 font-semibold text-sm md:text-base hover:-translate-y-0.5 hover:shadow-lg"
               >
-                contribute
+                Contribute
                 <Image
                   src="/icons/github-black.svg"
-                  alt="mobile image"
-                  width={15}
-                  height={15}
-                  className="ml-[6px]"
+                  alt="GitHub"
+                  width={16}
+                  height={16}
+                  className="ml-2"
                 />
               </Link>
             </li>

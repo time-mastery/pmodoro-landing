@@ -2,47 +2,72 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="text-center bg-gradient-to-b from-[#f1f1f1] to-[#f5f5f5] shadow-md">
-      <div className="max-w-[700px] m-auto  max-md:max-w-[600px] max-[650px]:max-w-[450px]">
-        <h2 className="font-semibold text-[2.4rem] max-[650px]:text-[25px] text-[#343036] p-[20px] leading-[3rem] max-md:leading-[2.2rem] max-[650px]:leading-[2rem] mb-3 max-md:text-[30px]">
-          Get organized and boost your productivity with our Pmodoro app!
-        </h2>
-        <p className="leading-[1.3rem] px-[40px]  max-[430px]:m-auto max-md:text-justify">
-          Our easy-to-use timer allows you to break your work into manageable
-          chunks, with built-in breaks to help prevent burnout. Stay on track
-          with custom task lists and progress tracking. Download now and see the
-          difference it can make in your workday!
-        </p>
-        <button className="px-[27px] py-[11px] rounded-[50px] mb-[5rem] max-md:mb-2 max-[430px]:mb-0 mt-[1.8rem] font-bold transition-all duration-200 bg-[#01ED64] hover:bg-[#00ff6a] border-2 border-black max-[650px]:px-[22px] max-[650px]:py-[7px]">
-          <Link
-            href="https://github.com/time-mastery/pmodoro-application/releases/"
-            target="_blank rel=noopener"
-          >
-            Get the app
-          </Link>
-        </button>
+    <section className="relative text-center bg-gradient-to-b from-[#fafafa] via-[#f5f5f5] to-[#f0f0f0] overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#01ED64] opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#01ED64] opacity-5 rounded-full blur-3xl"></div>
       </div>
-      <div className="flex justify-center max-[430px]:pb-[30px] max-[430px]:block max-[430px]:px-5">
-        <div className="w-[260px] h-[350px] mt-[90px] mr-[70px] max-lg:mr-[20px] max-md:w-[220px] max-md:h-[295px] max-md:mt-[125px] max-[650px]:hidden max-[430px]:block max-[430px]:h-full max-[430px]:mt-[60px]">
-          <img
-            src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/1.png"
-            alt="mobile image"
-            className="object-cover object-top w-full h-full"
-          />
+
+      <div className="relative max-w-4xl mx-auto px-5 pt-16 max-md:pt-12">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl text-[#1a1a1a] mb-6 leading-tight tracking-tight max-md:text-4xl max-[650px]:text-3xl">
+            Master Your Time with the{" "}
+            <span className="bg-gradient-to-r from-[#01ED64] to-[#00d856] bg-clip-text text-transparent">
+              Pomodoro Technique
+            </span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto px-4 max-md:text-base max-md:px-2">
+            Stay productive and focused with Pmodoro, a powerful time management app
+            that helps you work smarter. Using the proven Pomodoro technique, work in
+            focused 25-minute sessions followed by 5-minute breaks.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Link
+              href="https://github.com/time-mastery/pmodoro-application/releases/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative px-8 py-4 rounded-full font-bold text-base transition-all duration-300 bg-[#01ED64] hover:bg-[#00d856] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 hover:-translate-x-0.5 max-[650px]:px-6 max-[650px]:py-3 max-[650px]:text-sm"
+            >
+              <span className="relative z-10">Get the app</span>
+            </Link>
+          </div>
         </div>
-        <div className="w-[260px] h-[440px] max-md:w-[220px] max-md:h-[370px] max-md:mt-[50px] max-[650px]:mt-[70px] max-[430px]:h-full max-[430px]:m-auto max-[430px]:mt-[-110px]">
-          <img
-            src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/3.png"
-            alt="mobile image"
-            className="object-cover object-top w-full h-full"
-          />
-        </div>
-        <div className="w-[260px] h-[500px] mt-[-60px] ml-[70px] max-lg:ml-[20px] max-md:w-[220px] max-md:h-[420px] max-md:mt-[0px] max-[650px]:mt-[20px] max-[430px]:h-full max-[430px]:ml-[174px] max-[430px]:mt-[-110px]">
-          <img
-            src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/2.png"
-            alt="mobile image"
-            className="object-cover object-top w-full h-full"
-          />
+
+        {/* Mobile mockups */}
+        <div className="relative flex justify-center items-end gap-4 md:gap-8 pt-8">
+          <div className="w-[240px] h-[320px] md:w-[260px] md:h-[350px] mt-16 md:mt-20 relative group max-[650px]:hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#01ED64]/20 to-transparent rounded-t-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            <div className="relative w-full h-full rounded-t-3xl overflow-hidden shadow-2xl group-hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/1.png"
+                alt="Pmodoro app screenshot"
+                className="object-cover object-top w-full h-full"
+              />
+            </div>
+          </div>
+
+          <div className="w-[240px] h-[400px] md:w-[260px] md:h-[440px] relative group z-10">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#01ED64]/30 to-transparent rounded-t-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            <div className="relative w-full h-full rounded-t-3xl overflow-hidden shadow-2xl group-hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/3.png"
+                alt="Pmodoro app screenshot"
+                className="object-cover object-top w-full h-full"
+              />
+            </div>
+          </div>
+
+          <div className="w-[240px] h-[460px] md:w-[260px] md:h-[500px] mt-[-40px] md:mt-[-60px] relative group max-[650px]:hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#01ED64]/20 to-transparent rounded-t-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            <div className="relative w-full h-full rounded-t-3xl overflow-hidden shadow-2xl group-hover:scale-105 transition-transform duration-500">
+              <img
+                src="https://raw.githubusercontent.com/mahmoud-eslami/resume/main/pmodoro/2.png"
+                alt="Pmodoro app screenshot"
+                className="object-cover object-top w-full h-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
