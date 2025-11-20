@@ -25,11 +25,11 @@ function Features() {
 
   return (
     <section
-      className="py-20 md:py-24 bg-gradient-to-b from-white to-[#fafafa]"
+      className="py-12 md:py-16 bg-gradient-to-b from-white to-[#fafafa]"
       id="features"
     >
       <div className="max-w-6xl mx-auto px-5">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12">
           <h2 className="font-bold text-4xl md:text-5xl mb-4 text-[#1a1a1a]">
             Powerful Features
           </h2>

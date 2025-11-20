@@ -5,22 +5,18 @@ import Image from "next/image";
 function Download() {
   return (
     <section
-      className="py-20 md:py-24 bg-gradient-to-b from-[#fafafa] to-white relative overflow-hidden"
+      className="py-12 md:py-16 bg-gradient-to-b from-[#fafafa] to-white relative overflow-hidden"
       id="download"
     >
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#01ED64] opacity-5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#01ED64] opacity-5 rounded-full blur-3xl"></div>
-      </div>
       <div className="relative max-w-4xl mx-auto px-5 text-center">
         <h2 className="font-bold text-4xl md:text-5xl mb-4 text-[#1a1a1a]">
           Available on Mobile
         </h2>
-        <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 mb-8 md:mb-10 max-w-2xl mx-auto">
           Download Pmodoro on your favorite platform and start boosting your
           productivity today
         </p>
-        <div className="flex justify-center gap-4 md:gap-6 flex-wrap mb-8">
+        <div className="flex justify-center gap-4 md:gap-6 flex-wrap mb-6">
           <Link
             href="https://github.com/time-mastery/pmodoro-application/releases/"
             target="_blank"

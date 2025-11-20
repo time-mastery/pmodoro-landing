@@ -14,22 +14,22 @@ function MainNavigation() {
         <nav>
           <ul className="flex items-center list-none gap-8 md:gap-11 max-sm:gap-6">
             <li>
-              <Link 
-                href="/#about" 
+              <Link
+                href="/#about"
                 scroll={false}
-                className="text-gray-700 hover:text-[#01ED64] font-medium transition-colors duration-300 relative group"
+                className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-300 relative group"
               >
                 About
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#01ED64] group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </li>
 
             <li>
               <Popover>
                 <PopoverTrigger asChild>
-                  <button className="cursor-pointer text-gray-700 hover:text-[#01ED64] font-medium transition-colors duration-300 relative group">
+                  <button className="cursor-pointer text-gray-700 hover:text-gray-900 font-medium transition-colors duration-300 relative group">
                     Contact
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#01ED64] group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-900 group-hover:w-full transition-all duration-300"></span>
                   </button>
                 </PopoverTrigger>
                 <PopoverContent className="bg-[#414141] rounded-2xl p-2 w-auto border-none shadow-lg">

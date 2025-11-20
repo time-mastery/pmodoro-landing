@@ -31,7 +31,7 @@ function About() {
 
   return (
     <section
-      className="py-20 md:py-28 bg-gradient-to-b from-[#fafafa] to-white relative overflow-hidden"
+      className="py-12 md:py-16 bg-gradient-to-b from-[#fafafa] to-white relative overflow-hidden"
       id="about"
     >
       {/* Subtle background decoration */}
@@ -42,22 +42,19 @@ function About() {
 
       <div className="relative max-w-7xl mx-auto px-5">
         {/* Header section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12">
           <div className="inline-block mb-4">
             <span className="px-4 py-2 bg-gray-100 text-gray-700 font-semibold rounded-full text-sm md:text-base">
               📱 About Us
             </span>
           </div>
           <h2 className="font-bold text-4xl md:text-6xl mb-6 text-[#1a1a1a] leading-tight">
-            About{" "}
-            <span className="bg-gradient-to-r from-[#01ED64] to-[#00d856] bg-clip-text text-transparent">
-              Pmodoro
-            </span>
+            About <span className="text-[#1a1a1a]">Pmodoro</span>
           </h2>
         </div>
 
         {/* Main content section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
           {/* Left side - Text content */}
           <div className="space-y-6">
             <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-700">

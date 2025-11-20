@@ -29,10 +29,13 @@ function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 md:py-24 bg-white relative overflow-hidden" id="how-it-works">
+    <section
+      className="py-12 md:py-16 bg-white relative overflow-hidden"
+      id="how-it-works"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-[#fafafa] to-white"></div>
       <div className="relative max-w-6xl mx-auto px-5">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12">
           <h2 className="font-bold text-4xl md:text-5xl mb-4 text-[#1a1a1a]">
             How It Works
           </h2>
@@ -41,8 +44,8 @@ function HowItWorks() {
             work into focused intervals
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-12">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -60,26 +63,30 @@ function HowItWorks() {
             </div>
           ))}
         </div>
-        
-        <div className="bg-gradient-to-br from-[#01ED64]/10 via-white to-[#01ED64]/5 rounded-3xl p-8 md:p-12 shadow-lg border border-[#01ED64]/20 max-w-4xl mx-auto">
+
+        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-200 max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mb-6">
             <div className="text-center">
               <div className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-[#01ED64] to-[#00d856] bg-clip-text text-transparent">
                 25
               </div>
-              <div className="text-sm md:text-base text-gray-600 font-medium mt-1">Minutes</div>
+              <div className="text-sm md:text-base text-gray-600 font-medium mt-1">
+                Minutes
+              </div>
             </div>
             <div className="text-3xl md:text-4xl text-[#01ED64] font-bold">+</div>
             <div className="text-center">
               <div className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-[#01ED64] to-[#00d856] bg-clip-text text-transparent">
                 5
               </div>
-              <div className="text-sm md:text-base text-gray-600 font-medium mt-1">Minutes</div>
+              <div className="text-sm md:text-base text-gray-600 font-medium mt-1">
+                Minutes
+              </div>
             </div>
           </div>
           <p className="text-center text-gray-700 font-medium text-base md:text-lg leading-relaxed">
-            Work for 25 minutes, then take a 5-minute break. This simple rhythm
-            helps maintain focus and prevents burnout, making you more productive
+            Work for 25 minutes, then take a 5-minute break. This simple rhythm helps
+            maintain focus and prevents burnout, making you more productive
             throughout the day.
           </p>
         </div>
@@ -89,4 +96,3 @@ function HowItWorks() {
 }
 
 export default HowItWorks;
-

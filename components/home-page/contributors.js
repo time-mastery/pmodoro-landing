@@ -15,15 +15,18 @@ export default function Contributors() {
   return (
     <>
       {data ? (
-        <section className="text-center bg-gradient-to-b from-[#fafafa] via-white to-[#f5f5f5] py-16 md:py-20 px-5">
+        <section className="text-center bg-gradient-to-b from-[#fafafa] via-white to-[#f5f5f5] py-12 md:py-16 px-5">
           <h3 className="font-bold text-3xl md:text-4xl mb-2 text-[#1a1a1a]">
-            Contributors of <span className="bg-gradient-to-r from-[#01ED64] to-[#00d856] bg-clip-text text-transparent">Pmodoro</span>
+            Contributors of{" "}
+            <span className="bg-gradient-to-r from-[#01ED64] to-[#00d856] bg-clip-text text-transparent">
+              Pmodoro
+            </span>
           </h3>
-          <p className="text-gray-600 mb-8 text-sm md:text-base">
+          <p className="text-gray-600 mb-6 md:mb-8 text-sm md:text-base">
             Amazing people who make Pmodoro possible
           </p>
 
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-10 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 max-w-4xl mx-auto">
             {data?.contributors.map((contributor) => (
               <Link
                 key={contributor.id}
@@ -50,8 +53,18 @@ export default function Contributors() {
             className="inline-flex items-center gap-2 border-2 border-gray-800 rounded-full px-6 md:px-8 py-3 md:py-4 font-semibold transition-all duration-300 hover:bg-[#01ED64] hover:border-[#01ED64] hover:-translate-y-1 hover:shadow-lg text-sm md:text-base"
           >
             Contribute
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
             </svg>
           </Link>
         </section>
